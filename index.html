@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metal Gear Solid Fanpage</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Adding model-viewer library for 3D model display -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">METAL GEAR SOLID</div>
+            <ul class="nav-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#characters">Characters</a></li>
+                <li><a href="#glossary">Glossary</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <!-- Added iframe for YouTube video background -->
+        <video class="hero-video" src="video.mp4" autoplay loop muted playsinline width="640">
+        </video>
+        <div class="hero-dark-overlay"></div>
+
+        <div class="grid-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">METAL GEAR SOLID</h1>
+            <div class="hero-divider"></div>
+            <p class="hero-subtitle">A stealth action masterpiece. Infiltrate the world's most dangerous situations.</p>
+            <button class="cta-button">Enter the World</button>
+        </div>
+        <div class="hero-footer-line"></div>
+    </section>
+
+    <!-- TIMELINE SECTION -->
+    <section id="timeline" class="timeline">
+        <div class="container">
+            <h2>Game Timeline</h2>
+            <div class="timeline-grid">
+                <div class="timeline-item">
+                    <div class="timeline-year">1987</div>
+                    <h3>Metal Gear</h3>
+                    <p>You infiltrate the fortress of Outer Heaven as Solid Snake to destroy Metal Gear and stop a
+                        nuclear threat.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1990</div>
+                    <h3>Metal Gear 2: Solid Snake</h3>
+                    <p>A return to battle in Zanzibar Land, uncovering the truth behind war and facing the legendary Big
+                        Boss.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1998</div>
+                    <h3>Metal Gear Solid</h3>
+                    <p>Infiltrate Shadow Moses Island to stop Metal Gear and uncover the truth about your past.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2001</div>
+                    <h3>Metal Gear Solid 2: Sons of Liberty</h3>
+                    <p>A new soldier takes on the mantle in a mission filled with philosophical questions about control
+                        and identity.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2004</div>
+                    <h3>Metal Gear Solid 3: Snake Eater</h3>
+                    <p>Journey into Cold War history as Naked Snake confronts his mentor, The Boss, in an unforgettable
+                        showdown.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2008</div>
+                    <h3>Metal Gear Solid 4: Guns of the Patriots</h3>
+                    <p>An aging Solid Snake confronts his legacy in a final mission to end the cycle of violence.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2010</div>
+                    <h3>Metal Gear Solid: Peace Walker</h3>
+                    <p>Big Boss leads the Militaires Sans Frontières as he builds his own army and challenges the global
+                        balance of power during the Cold War</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2015</div>
+                    <h3>Metal Gear Solid V: The Phantom Pain</h3>
+                    <p>Build your mercenary empire and seek revenge in an open-world tactical espionage masterpiece.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHARACTER CAROUSEL SECTION -->
+    <section id="characters" class="characters">
+        <div class="container">
+            <h2>Characters</h2>
+            <div class="character-carousel">
+                <div class="character-card">
+                    <div class="character-content">
+                        <div class="character-text">
+                            <h3 class="character-name">Solid Snake</h3>
+                            <p class="character-description">Solid Snake is a legendary soldier and master of stealth,
+                                known for his calm demeanor and unwavering determination in the face of impossible odds.
+                                Trained for infiltration and close-quarters combat, he consistently confronts nuclear
+                                threats and rogue operatives while wrestling with the burdens of his own past.
+                                Courageous, resourceful, and morally driven, Solid Snake stands as the embodiment of
+                                heroism in the shadowy world of espionage.</p>
+                            <div class="character-tags">
+                                <span class="tag">Tactical Espionage</span>
+                                <span class="tag">Expert Marksman</span>
+                                <span class="tag">Stealth Master</span>
+                            </div>
+                        </div>
+                        <!-- Replaced local model reference with Sketchfab embed -->
+                        <div class="character-model-placeholder">
+                            <iframe title="Solid Snake 3D Model" frameborder="0" allowfullscreen
+                                mozallowfullscreen="true" webkitallowfullscreen="true"
+                                allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+                                execution-while-out-of-viewport execution-while-not-rendered web-share
+                                src="https://sketchfab.com/models/256d4c57d8704346a51184de3acbba7e/embed"
+                                style="width: 100%; height: 100%;"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card hidden">
+                    <div class="character-content">
+                        <div class="character-text">
+                            <h3 class="character-name">Liquid Snake</h3>
+                            <p class="character-description">Liquid Snake is a cunning and charismatic soldier, driven
+                                by ambition, rivalry, and the desire to surpass his “twin,” Solid Snake. A master
+                                tactician and fearless combatant, he orchestrates complex schemes and rallies followers
+                                to challenge governments and legends alike. Fueled by pride and a deep sense of destiny,
+                                Liquid Snake embodies the chaos and obsession that define a true antagonist.</p>
+                            <div class="character-tags">
+                                <span class="tag">Ruthless Leader</span>
+                                <span class="tag">Combat Genius</span>
+                                <span class="tag">Genetic Perfection</span>
+                            </div>
+                        </div>
+                        <!-- Using alternative Snake model from Sketchfab -->
+                        <div class="character-model-placeholder">
+                            <iframe title="PC Computer - Metal Gear Solid Solid Snake" frameborder="0" allowfullscreen
+                                mozallowfullscreen="true" webkitallowfullscreen="true"
+                                allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+                                execution-while-out-of-viewport execution-while-not-rendered web-share
+                                src="https://sketchfab.com/models/5b7d52ff423745be92289d248e9a1f41/embed"
+                                style="width: 100%; height: 100%;"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card hidden">
+                    <div class="character-content">
+                        <div class="character-text">
+                            <h3 class="character-name">Raiden</h3>
+                            <p class="character-description">Raiden is a highly skilled soldier whose journey from
+                                rookie operative to cybernetic warrior is defined by struggle, resilience, and
+                                self-discovery. Trained in both stealth and close-quarters combat, he faces moral
+                                dilemmas and unimaginable threats while uncovering the dark truths behind war and
+                                manipulation. Determined, adaptable, and relentless, Raiden evolves into a symbol of
+                                human perseverance and transformation.</p>
+                            <div class="character-tags">
+                                <span class="tag">Versatile Fighter</span>
+                                <span class="tag">Adaptable Warrior</span>
+                                <span class="tag">Reluctant Hero</span>
+                            </div>
+                        </div>
+                        <!-- Placeholder for Raiden model - add custom Sketchfab URL when available -->
+                        <div class="character-model-placeholder">
+                            <iframe title="PC Computer - Metal Gear Solid Solid Snake" frameborder="0" allowfullscreen
+                                mozallowfullscreen="true" webkitallowfullscreen="true"
+                                allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+                                execution-while-out-of-viewport execution-while-not-rendered web-share
+                                src="https://sketchfab.com/models/a30b04c39f2e4c52b40925ba5cf683d6/embed"
+                                style="width: 100%; height: 100%;"></iframe>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card hidden">
+                    <div class="character-content">
+                        <div class="character-text">
+                            <h3 class="character-name">Big Boss</h3>
+                            <p class="character-description">Big Boss is a legendary soldier whose vision and ambition
+                                shaped the world of private armies and global conflict. A master of combat, strategy,
+                                and leadership, he inspires loyalty while navigating the fine line between heroism and
+                                villainy. Complex, determined, and haunted by his past, Big Boss embodies the birth of
+                                legends and the human cost behind them.</p>
+                            <div class="character-tags">
+                                <span class="tag">Master Tactician</span>
+                                <span class="tag">Living Legend</span>
+                                <span class="tag">Immortal Soldier</span>
+                            </div>
+                        </div>
+                        <!-- Placeholder for Big Boss model - add custom Sketchfab URL when available -->
+                        <div class="character-model-placeholder">
+                            <iframe title="Solid Snake 3D Model" frameborder="0" allowfullscreen
+                                mozallowfullscreen="true" webkitallowfullscreen="true"
+                                allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+                                execution-while-out-of-viewport execution-while-not-rendered web-share
+                                src="https://sketchfab.com/models/976271ab21dc409291e3dbe59cd06a00/embed"
+                                style="width: 100%; height: 100%;"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card hidden">
+                    <div class="character-content">
+                        <div class="character-text">
+                            <h3 class="character-name">The Boss</h3>
+                            <p class="character-description">The Boss is a legendary soldier and mentor whose ideals and
+                                sacrifices shape the course of history. Renowned for her unmatched combat skills and
+                                unwavering sense of duty, she navigates the thin line between loyalty and betrayal to
+                                protect her nation. Wise, disciplined, and inspiring, The Boss embodies honor and the
+                                ultimate cost of serving one’s convictions.</p>
+                            <div class="character-tags">
+                                <span class="tag">Legendary Fighter</span>
+                                <span class="tag">Symbol of Honor</span>
+                                <span class="tag">Tragic Hero</span>
+                            </div>
+                        </div>
+                        <!-- Placeholder for The Boss model - add custom Sketchfab URL when available -->
+                        <div class="character-model-placeholder">
+                            <iframe title="Solid Snake 3D Model" frameborder="0" allowfullscreen
+                                mozallowfullscreen="true" webkitallowfullscreen="true"
+                                allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+                                execution-while-out-of-viewport execution-while-not-rendered web-share
+                                src="https://sketchfab.com/models/20d17e82fb654514b523c3e34caa1c66/embed"
+                                style="width: 100%; height: 100%;"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card hidden">
+                    <div class="character-content">
+                        <div class="character-text">
+                            <h3 class="character-name">Revolver Ocelot</h3>
+                            <p class="character-description">Revolver Ocelot is one of the most enigmatic and
+                                influential figures in the Metal Gear Solid saga. A master gunslinger and elite
+                                interrogator, he is known for his obsession with revolvers, his psychological warfare,
+                                and his unmatched ability to manipulate allies and enemies alike. Loyal to no one but
+                                his own long-term vision, Ocelot operates as a double—and often triple—agent, shaping
+                                the fate of the world from the shadows across multiple eras.</p>
+                            <div class="character-tags">
+                                <span class="tag">Master Manipulator</span>
+                                <span class="tag">Gunslinger</span>
+                                <span class="tag">Triple Agent</span>
+                            </div>
+                        </div>
+                        <!-- Placeholder for Ocelot model - add custom Sketchfab URL when available -->
+                        <div class="character-model-placeholder">
+                            <iframe title="Solid Snake 3D Model" frameborder="0" allowfullscreen
+                                mozallowfullscreen="true" webkitallowfullscreen="true"
+                                allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+                                execution-while-out-of-viewport execution-while-not-rendered web-share
+                                src="https://sketchfab.com/models/ff5fd902fa52417c8065bde63c6d24fb/embed"
+                                style="width: 100%; height: 100%;"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card hidden">
+                    <div class="character-content">
+                        <div class="character-text">
+                            <h3 class="character-name">Meryl Silverburgh</h3>
+                            <p class="character-description">Meryl Silverburgh is a determined and resilient soldier who
+                                represents the human cost of warfare in the Metal Gear Solid series. Thrust into combat
+                                with limited experience, she proves her courage through grit, adaptability, and an
+                                unyielding will to survive. Balancing vulnerability with strength, Meryl stands as a
+                                symbol of personal growth and moral resolve amid the chaos of the battlefield.</p>
+                            <div class="character-tags">
+                                <span class="tag">Rookie Soldier</span>
+                                <span class="tag">Resilient</span>
+                                <span class="tag">Strong-Willed</span>
+                            </div>
+                        </div>
+                        <!-- Placeholder for Meryl model - add custom Sketchfab URL when available -->
+                        <div class="character-model-placeholder">
+                            <iframe title="Solid Snake 3D Model" frameborder="0" allowfullscreen
+                                mozallowfullscreen="true" webkitallowfullscreen="true"
+                                allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+                                execution-while-out-of-viewport execution-while-not-rendered web-share
+                                src="https://sketchfab.com/models/0d99d4735b504c428f5662cda530d015/embed"
+                                style="width: 100%; height: 100%;"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card hidden">
+                    <div class="character-content">
+                        <div class="character-text">
+                            <h3 class="character-name">Venom Snake</h3>
+                            <p class="character-description">Venom Snake is the phantom forged from legend, a soldier
+                                shaped by trauma, loyalty, and deception. As the commander of Diamond Dogs, he carries
+                                the weight of Big Boss’s legacy while carving his own identity through relentless
+                                warfare and leadership. Silent, disciplined, and unwavering, Venom Snake embodies the
+                                cost of turning a man into a symbol—and the sacrifice required to keep a legend alive.
+                            </p>
+                            <div class="character-tags">
+                                <span class="tag">Phantom Soldier</span>
+                                <span class="tag">Reluctant Leader</span>
+                                <span class="tag">Living Legend</span>
+                            </div>
+                        </div>
+                        <!-- Placeholder for Venom Snake model - add custom Sketchfab URL when available -->
+                        <div class="character-model-placeholder">
+                            <iframe title="Solid Snake 3D Model" frameborder="0" allowfullscreen
+                                mozallowfullscreen="true" webkitallowfullscreen="true"
+                                allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+                                execution-while-out-of-viewport execution-while-not-rendered web-share
+                                src="https://sketchfab.com/models/8c788ef3a7e545afadc29d833052b7eb/embed"
+                                style="width: 100%; height: 100%;"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card hidden">
+                    <div class="character-content">
+                        <div class="character-text">
+                            <h3 class="character-name">Hal "Otacon" Emmerich</h3>
+                            <p class="character-description">Hal “Otacon” Emmerich is a brilliant engineer whose
+                                idealism clashes sharply with the brutal reality of war. A specialist in robotics and
+                                weapons technology, he provides critical support while struggling with guilt over how
+                                his inventions are used. Intelligent, compassionate, and deeply human, Otacon serves as
+                                the moral heart of the Metal Gear Solid series, proving that empathy can exist even in a
+                                world built on conflict.</p>
+                            <div class="character-tags">
+                                <span class="tag">Genius Engineer</span>
+                                <span class="tag">Idealist</span>
+                                <span class="tag">Moral Compass</span>
+                            </div>
+                        </div>
+                        <!-- Placeholder for Otacon model - add custom Sketchfab URL when available -->
+                        <div class="character-model-placeholder">
+                            <iframe title="Solid Snake 3D Model" frameborder="0" allowfullscreen
+                                mozallowfullscreen="true" webkitallowfullscreen="true"
+                                allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+                                execution-while-out-of-viewport execution-while-not-rendered web-share
+                                src="https://sketchfab.com/models/2d50cf2426854429b2ff48fb31cbd0e2/embed"
+                                style="width: 100%; height: 100%;"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-controls">
+                <button class="carousel-btn prev" id="prevBtn">← Previous</button>
+                <button class="carousel-btn next" id="nextBtn">Next →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- GLOSSARY SECTION -->
+    <section id="glossary" class="glossary">
+        <div class="container">
+            <h2>Game Glossary</h2>
+            <div class="glossary-grid">
+                <div class="glossary-item">
+                    <div class="glossary-header" onclick="toggleGlossary(this)">
+                        <h3>OUTER HEAVEN</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="glossary-content">
+                        <p>A legendary military fortress and nation founded by Big Boss. The first game takes place
+                            during attempts to stop its weapon.</p>
+                    </div>
+                </div>
+
+                <div class="glossary-item">
+                    <div class="glossary-header" onclick="toggleGlossary(this)">
+                        <h3>METAL GEAR</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="glossary-content">
+                        <p>A bipedal nuclear-armed tank. The ultimate weapon that becomes the series' most iconic
+                            vehicle and symbol.</p>
+                    </div>
+                </div>
+
+                <div class="glossary-item">
+                    <div class="glossary-header" onclick="toggleGlossary(this)">
+                        <h3>CODEC</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="glossary-content">
+                        <p>A wireless communication device allowing soldiers to receive mission briefings and guidance
+                            during operations.</p>
+                    </div>
+                </div>
+
+                <div class="glossary-item">
+                    <div class="glossary-header" onclick="toggleGlossary(this)">
+                        <h3>FOXDIE</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="glossary-content">
+                        <p>An experimental virus engineered to assassinate specific individuals through genetic
+                            targeting.</p>
+                    </div>
+                </div>
+
+                <div class="glossary-item">
+                    <div class="glossary-header" onclick="toggleGlossary(this)">
+                        <h3>SHADOW MOSES</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="glossary-content">
+                        <p>A top-secret military fortress on an island in Alaska where the first game's infiltration
+                            mission takes place.</p>
+                    </div>
+                </div>
+
+                <div class="glossary-item">
+                    <div class="glossary-header" onclick="toggleGlossary(this)">
+                        <h3>PATRIOTS</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="glossary-content">
+                        <p>The mysterious organization controlling global politics, wars, and the destiny of soldiers
+                            throughout the series.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUIZ SECTION -->
+    <section id="quiz" class="quiz">
+        <div class="container">
+            <h2>Test Your Knowledge</h2>
+            <div class="quiz-container">
+                <div class="quiz-progress">
+                    <span id="questionNumber">Question 1 of 5</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                </div>
+
+                <div class="questions-wrapper">
+                    <div class="question active" data-question="0">
+                        <h3>What is the name of the first Metal Gear Solid game's main setting?</h3>
+                        <div class="options">
+                            <label><input type="radio" name="q0" value="a"> Shadow Moses Island</label>
+                            <label><input type="radio" name="q0" value="b"> Zanzibar Land</label>
+                            <label><input type="radio" name="q0" value="c"> Outer Heaven</label>
+                            <label><input type="radio" name="q0" value="d"> Tannoy</label>
+                        </div>
+                    </div>
+
+                    <div class="question" data-question="1">
+                        <h3>Which character is Solid Snake's genetic clone?</h3>
+                        <div class="options">
+                            <label><input type="radio" name="q1" value="a"> Raiden</label>
+                            <label><input type="radio" name="q1" value="b"> Liquid Snake</label>
+                            <label><input type="radio" name="q1" value="c"> Big Boss</label>
+                            <label><input type="radio" name="q1" value="d"> Revolver Ocelot</label>
+                        </div>
+                    </div>
+
+                    <div class="question" data-question="2">
+                        <h3>What does CODEC stand for?</h3>
+                        <div class="options">
+                            <label><input type="radio" name="q2" value="a"> Communication Device Encoder</label>
+                            <label><input type="radio" name="q2" value="b"> Coded Operation Display Equipment</label>
+                            <label><input type="radio" name="q2" value="c"> Wireless Codec Transmitter</label>
+                            <label><input type="radio" name="q2" value="d"> Not explicitly stated (it's just called
+                                CODEC)</label>
+                        </div>
+                    </div>
+
+                    <div class="question" data-question="3">
+                        <h3>Who is the main antagonist in MGS 3: Snake Eater?</h3>
+                        <div class="options">
+                            <label><input type="radio" name="q3" value="a"> Revolver Ocelot</label>
+                            <label><input type="radio" name="q3" value="b"> The Boss</label>
+                            <label><input type="radio" name="q3" value="c"> Liquid Snake</label>
+                            <label><input type="radio" name="q3" value="d"> Colonel Campbell</label>
+                        </div>
+                    </div>
+
+                    <div class="question" data-question="4">
+                        <h3>What year does the first Metal Gear Solid take place?</h3>
+                        <div class="options">
+                            <label><input type="radio" name="q4" value="a"> 1995</label>
+                            <label><input type="radio" name="q4" value="b"> 2005</label>
+                            <label><input type="radio" name="q4" value="c"> 2009</label>
+                            <label><input type="radio" name="q4" value="d"> 1999</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-navigation">
+                    <button class="quiz-btn prev" id="prevQuizBtn">← Previous</button>
+                    <button class="quiz-btn next" id="nextQuizBtn">Next →</button>
+                    <button class="quiz-btn submit" id="submitQuizBtn" style="display: none;">Submit Quiz</button>
+                </div>
+            </div>
+
+            <div id="quizResult"></div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About</h3>
+                    <p>This is a fanpage celebrating the legendary Metal Gear Solid franchise. Experience the tactical
+                        espionage greatness.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#timeline">Timeline</a></li>
+                        <li><a href="#characters">Characters</a></li>
+                        <li><a href="#glossary">Glossary</a></li>
+                        <li><a href="#quiz">Quiz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Main Titles</h3>
+                    <ul>
+                        <li>MGS1</li>
+                        <li>MGS2: Sons of Liberty</li>
+                        <li>MGS3: Snake Eater</li>
+                        <li>MGS4: Guns of the Patriots</li>
+                        <li>MGS V: The Phantom Pain</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Metal Gear Solid Fanpage. All rights reserved.</p>
+                <p>Metal Gear Solid is a trademark of Konami. This is an unofficial fan site.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
