@@ -92,6 +92,13 @@ document.addEventListener('DOMContentLoaded', () => {
     navToggle.addEventListener("click", () => navMenu.classList.toggle("active"));
   }
 
+  window.addEventListener('load', hidePreloader);
+  
+  function hidePreloader() {
+    const preloader = document.getElementById('preloader');
+    preloader.style.display = 'none';
+  }
+
   // Smooth Scrolling (safe)
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
