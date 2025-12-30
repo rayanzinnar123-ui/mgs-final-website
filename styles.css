@@ -755,3 +755,14 @@ body {
     font-size: 36px;
   }
 }
+
+#preloader{
+    background-image: url(https://i.redd.it/32icebkfmtcb1.gif);
+    position: fixed;
+    z-index: 250;
+    width: 900vw;
+    height: 900vh;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
