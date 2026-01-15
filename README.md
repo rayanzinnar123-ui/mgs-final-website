@@ -2,9 +2,9 @@
 This project is a fanpage dedicated to the iconic "Metal Gear" franchise written by Hideo Kojima. With a game franchise spanning across almost 4 decades, and games released in different narrational orders, getting into one of the best videogame franchises can often be confusing for many. This website serves as a guide for players who wanna get into MG, or are fans of the franchise to know more about the game.
 
 ## Technologies Used
-HTML-
-CSS-
-JavaScript-
+- HTML
+- CSS
+- JavaScript
 
 ## How to use the project
 1. Open index.html in a browser, or use https://mgs-final-website.onrender.com/ to view it on the web  
